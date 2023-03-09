@@ -1,0 +1,16 @@
+# Folders
+.vs/
+/packages/
+/*/packages/
+/*/bin/
+/*/csx/
+/*/ecf/
+/*/obj/
+/*/node_modules/
+
+# Files
+*.user
+*.pubxml
+*.DotSettings
+*.PublishSettings
+.DS_Store
