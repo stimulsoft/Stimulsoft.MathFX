@@ -4,8 +4,8 @@ This repository contains the source code of the library for working with mathema
 
 # How to use
 
-To use the library functions, it is enough to install the NuGet package listed below in your project. To use the source codes, you need to clone this repository and connect the source codes to your project.
+To use the library functions, it is enough to install the NuGet package listed below in your project. To use the source codes, you can clone this repository and connect the source codes to your project.
 
 [NuGet](https://www.nuget.org/packages/Stimulsoft.MathFX)
 
-[License](LICENSE.md)
+[GPL-3.0 License](LICENSE.md)
