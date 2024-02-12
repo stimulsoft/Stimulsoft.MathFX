@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net452;net472;net6.0;netstandard2.1</TargetFrameworks>
+    <TargetFrameworks>net452;net472;netcoreapp3.1;net6.0;net8.0</TargetFrameworks>
     <AssemblyName>Stimulsoft.MathFX</AssemblyName>
     <RootNamespace>Stimulsoft.MathFX</RootNamespace>
     <SignAssembly>true</SignAssembly>
@@ -15,9 +15,11 @@
 
   <PropertyGroup>
     <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants Condition="'$(TargetFramework)' == 'net452'">$(DefineConstants);NET452</DefineConstants>
     <DefineConstants Condition="'$(TargetFramework)' == 'net472'">$(DefineConstants);NET472</DefineConstants>
-    <DefineConstants Condition="'$(TargetFramework)' == 'net6.0'">$(DefineConstants);NETSTANDARD;NET60</DefineConstants>
-    <DefineConstants Condition="'$(TargetFramework)' == 'netstandard2.1'">$(DefineConstants);NETSTANDARD</DefineConstants>
+    <DefineConstants Condition="'$(TargetFramework)' == 'netcoreapp3.1'">$(DefineConstants);NETCORE;NET31</DefineConstants>
+    <DefineConstants Condition="'$(TargetFramework)' == 'net6.0'">$(DefineConstants);NETCORE;NET60</DefineConstants>
+    <DefineConstants Condition="'$(TargetFramework)' == 'net8.0'">$(DefineConstants);NETCORE;NET80</DefineConstants>
     <DefineConstants Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">$(DefineConstants);DEBUG</DefineConstants>
   </PropertyGroup>
 
