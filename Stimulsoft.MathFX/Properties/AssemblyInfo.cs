@@ -1,11 +1,11 @@
-#region Copyright (C) 2003-2023 Stimulsoft
+#region Copyright (C) 2003-2026 Stimulsoft
 /*
 {*******************************************************************}
 {																	}
 {	Stimulsoft Reports												}
 {	                         										}
 {																	}
-{	Copyright (C) 2003-2023 Stimulsoft     							}
+{	Copyright (C) 2003-2026 Stimulsoft     							}
 {	ALL RIGHTS RESERVED												}
 {																	}
 {	The entire contents of this file is protected by U.S. and		}
@@ -26,7 +26,7 @@
 {																	}
 {*******************************************************************}
 */
-#endregion Copyright (C) 2003-2023 Stimulsoft
+#endregion Copyright (C) 2003-2026 Stimulsoft
 
 using Stimulsoft.MathFX;
 using System;
@@ -55,6 +55,6 @@ namespace Stimulsoft.MathFX
         public const string CreationDate = "4 Dec 2025";
         public static DateTime Created = new DateTime(2025, 12, 4);
         public const string VersionInfo = "Version=" + Version + ", Culture=neutral, " + StiPublicKeyToken.Key;
-        public const string Copyright = "Copyright (C) 2003-2025 Stimulsoft";
+        public const string Copyright = "Copyright (C) 2003-2026 Stimulsoft";
     }
 }
