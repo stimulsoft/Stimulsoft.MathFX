@@ -51,9 +51,9 @@ namespace Stimulsoft.MathFX
 {
     public class StiVersion
     {
-        public const string Version = "2026.2.1.0";
-        public const string CreationDate = "4 Dec 2025";
-        public static DateTime Created = new DateTime(2025, 12, 4);
+        public const string Version = "2026.4.1.0";
+        public const string CreationDate = "9 Sep 2026";
+        public static DateTime Created = new DateTime(2026, 9, 9);
         public const string VersionInfo = "Version=" + Version + ", Culture=neutral, " + StiPublicKeyToken.Key;
         public const string Copyright = "Copyright (C) 2003-2026 Stimulsoft";
     }

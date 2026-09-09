@@ -1,7 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net452;net472;net6.0;net8.0;net10.0</TargetFrameworks>
+    <TargetFrameworks>net462;net472;net6.0;net8.0;net10.0</TargetFrameworks>
+    <StiNet4 Condition="$(TargetFramework.StartsWith('net4'))">true</StiNet4>
     <AssemblyName>Stimulsoft.MathFX</AssemblyName>
     <RootNamespace>Stimulsoft.MathFX</RootNamespace>
     <SignAssembly>true</SignAssembly>
@@ -14,17 +15,12 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <DefineConstants>TRACE</DefineConstants>
-    <DefineConstants Condition="'$(TargetFramework)' == 'net452'">$(DefineConstants);NET452</DefineConstants>
-    <DefineConstants Condition="'$(TargetFramework)' == 'net472'">$(DefineConstants);NET472</DefineConstants>
-    <DefineConstants Condition="'$(TargetFramework)' == 'netcoreapp3.1'">$(DefineConstants);NETCORE;NET31</DefineConstants>
-    <DefineConstants Condition="'$(TargetFramework)' == 'net6.0'">$(DefineConstants);NETCORE;NET60</DefineConstants>
-    <DefineConstants Condition="'$(TargetFramework)' == 'net8.0'">$(DefineConstants);NETCORE;NET80</DefineConstants>
-    <DefineConstants Condition="'$(TargetFramework)' == 'net10.0'">$(DefineConstants);NETCORE;NET100</DefineConstants>
-    <DefineConstants Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">$(DefineConstants);DEBUG</DefineConstants>
+    <DefineConstants>TRACE;</DefineConstants>
+    <DefineConstants Condition="$(Configuration.Contains('Debug'))">$(DefineConstants)DEBUG;</DefineConstants>
+    <DefineConstants Condition="'$(StiNet4)' != 'true'">$(DefineConstants)NETCORE;</DefineConstants>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+  <PropertyGroup Condition="!$(DefineConstants.Contains(';DEBUG;'))">
     <Optimize>true</Optimize>
   </PropertyGroup>
 
