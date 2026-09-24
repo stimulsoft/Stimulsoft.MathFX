@@ -51,6 +51,9 @@ namespace Stimulsoft.MathFX
 {
     public class StiVersion
     {
+        // When changing the MathFX version, update these files:
+        // - Stimulsoft.Reports/Stimulsoft.Base/Helpers/StiMathHelper.cs
+        // - Stimulsoft.NuGet/Nuspec/Stimulsoft.MathFX.nuspec
         public const string Version = "2026.4.1.0";
         public const string CreationDate = "9 Sep 2026";
         public static DateTime Created = new DateTime(2026, 9, 9);
