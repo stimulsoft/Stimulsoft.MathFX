@@ -626,6 +626,10 @@ namespace SvgMath
 
         public object[] FindChar(int ch)
         {
+            #region Stimulsoft Correction
+            // Walk through every family of the font pool, the way the original Python
+            // implementation does. Bailing out after the first family made a font list
+            // such as "Tinos, Noto Sans Math" behave as if only the first entry existed.
             foreach (FontMetricRecord fd in FontPool())
             {
                 if (fd.Metric.CharData.ContainsKey(ch))
@@ -633,16 +637,16 @@ namespace SvgMath
                     CharMetric cm = fd.Metric.CharData[ch];
                     return new object[] { cm, fd };
                 }
-                else
-                {
-                    if (0 < ch && ch < 0xFFFF && MathDefaults.SpecialChars.ContainsKey(ch))
-                    {
-                        return FindChar(MathDefaults.SpecialChars[ch]); //ToDo: Verify correct working
-                    }
-                    return null;// new object[] { null, null };
-                }
             }
-            return null;// new object[] { null, null }; //ToDo: verify correct working
+
+            // No family has the character: retry with its plain substitute, if any.
+            // SpecialChars maps to ASCII characters that are never keys themselves,
+            // so this recursion cannot loop.
+            if (0 < ch && ch < 0xFFFF && MathDefaults.SpecialChars.ContainsKey(ch))
+                return FindChar(MathDefaults.SpecialChars[ch]);
+
+            return null;
+            #endregion
         }
 
         private int[] GetUCSText()

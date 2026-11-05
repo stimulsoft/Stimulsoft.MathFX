@@ -35,11 +35,18 @@
     <font weight="bold" style="italic" ttf="Fonts.TIMESBI.TTF" />
   </family>-->
 
-	<family name="Cambria Math">
-		<font ttf="Fonts.CAMBRIA.TTF" />
-		<font weight="bold" ttf="Fonts.CAMBRIAB.TTF" />
-		<font style="italic" ttf="Fonts.CAMBRIAI.TTF" />
-		<font weight="bold" style="italic" ttf="Fonts.CAMBRIAZ.TTF" />
+	<!-- Text face: letters, digits, punctuation (SIL Open Font License 1.1) -->
+	<family name="Tinos">
+		<font ttf="Fonts.Tinos-Regular.ttf" />
+		<font weight="bold" ttf="Fonts.Tinos-Bold.ttf" />
+		<font style="italic" ttf="Fonts.Tinos-Italic.ttf" />
+		<font weight="bold" style="italic" ttf="Fonts.Tinos-BoldItalic.ttf" />
+	</family>
+
+	<!-- Math face: operators, arrows, delimiters, technical symbols (SIL Open Font License 1.1).
+	     Ships in a single weight; FindFont falls back to it for bold and italic. -->
+	<family name="Noto Sans Math">
+		<font ttf="Fonts.NotoSansMath-Regular.ttf" />
 	</family>
 
   <!--<family name="Arial">
@@ -67,13 +74,13 @@
 
   <!-- Serif -->
 	<mathvariant name="normal"
-		 family="Cambria Math" />
+				 family="Tinos, Noto Sans Math" />
 	<mathvariant name="bold"
-				 family="Cambria Math" weight="bold" />
+				 family="Tinos, Noto Sans Math" weight="bold" />
 	<mathvariant name="italic"
-				 family="Cambria Math" style="italic" />
+				 family="Tinos, Noto Sans Math" style="italic" />
 	<mathvariant name="bold-italic"
-				 family="Cambria Math" weight="bold" style="italic" />
+				 family="Tinos, Noto Sans Math" weight="bold" style="italic" />
 	
   <!--<mathvariant name="normal"
                family="Times New Roman, Lucida Sans Unicode" />
