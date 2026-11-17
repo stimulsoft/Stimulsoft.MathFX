@@ -1,3 +1,28 @@
+# GNU General Public License v3
+
+This repository contains the source code of Stimulsoft.MathFX, the library for working with mathematical formulas
+used by Stimulsoft products. The library is distributed under the GNU General Public License, version 3 or (at your
+option) any later version. The text of version 3 is reproduced below.
+
+The library includes the code and the fonts of third parties:
+
+- `Stimulsoft.MathFX/Converter`, the LaTeX to MathML converter, is a modified copy of
+  [LatexMath2MathML](https://github.com/smallgreycreatures/LatexMath2MathML) by Frans Nordén, distributed under the
+  GNU General Public License, version 3 or any later version;
+- `Stimulsoft.MathFX/Export`, the MathML to SVG renderer, is a modified copy of the C# port of
+  [SVGMath](https://github.com/acivux/SvgMath) by Nikolai Grigoriev, distributed under the MIT License;
+- the fonts [Tinos](https://github.com/googlefonts/tinos) and [Noto Sans Math](https://github.com/notofonts/math),
+  embedded into the assembly, are distributed under the SIL Open Font License 1.1, which stays their license inside
+  the library.
+
+Their copyright notices and license texts are in [THIRD-PARTY.md](THIRD-PARTY.md); the Stimulsoft.MathFX NuGet
+package carries both files.
+
+The source code of Stimulsoft.MathFX.dll and of the Stimulsoft.MathFX NuGet package is available at
+https://github.com/stimulsoft/Stimulsoft.MathFX.
+
+---
+
 GNU General Public License
 ==========================
 

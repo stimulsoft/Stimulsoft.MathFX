@@ -1,30 +1,20 @@
 #region Copyright (C) 2003-2026 Stimulsoft
 /*
-{*******************************************************************}
-{																	}
-{	Stimulsoft Reports												}
-{	                         										}
-{																	}
-{	Copyright (C) 2003-2026 Stimulsoft     							}
-{	ALL RIGHTS RESERVED												}
-{																	}
-{	The entire contents of this file is protected by U.S. and		}
-{	International Copyright Laws. Unauthorized reproduction,		}
-{	reverse-engineering, and distribution of all or any portion of	}
-{	the code contained in this file is strictly prohibited and may	}
-{	result in severe civil and criminal penalties and will be		}
-{	prosecuted to the maximum extent possible under the law.		}
-{																	}
-{	RESTRICTIONS													}
-{																	}
-{	THIS SOURCE CODE AND ALL RESULTING INTERMEDIATE FILES			}
-{	ARE CONFIDENTIAL AND PROPRIETARY								}
-{	TRADE SECRETS OF Stimulsoft										}
-{																	}
-{	CONSULT THE END USER LICENSE AGREEMENT FOR INFORMATION ON		}
-{	ADDITIONAL RESTRICTIONS.										}
-{																	}
-{*******************************************************************}
+    This file is part of Stimulsoft.MathFX.
+    Copyright (C) 2003-2026 Stimulsoft
+
+    Stimulsoft.MathFX is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Stimulsoft.MathFX is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Stimulsoft.MathFX.  If not, see <https://www.gnu.org/licenses/>.
 */
 #endregion Copyright (C) 2003-2026 Stimulsoft
 
