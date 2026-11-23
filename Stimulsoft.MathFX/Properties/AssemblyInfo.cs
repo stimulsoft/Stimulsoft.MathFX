@@ -34,6 +34,7 @@ using System.Security;
 [assembly: AllowPartiallyTrustedCallers]
 [assembly: CLSCompliant(false)]
 [assembly: AssemblyVersion(StiVersion.Version)]
+[assembly: AssemblyFileVersion(StiVersion.Version)]
 [assembly: AssemblyDelaySign(false)]
 [assembly: SecurityRules(SecurityRuleSet.Level1)]
 
